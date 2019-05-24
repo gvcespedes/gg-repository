@@ -21,10 +21,12 @@ class MiVentana(QWidget):
         self.label3.move(10, 15)
         self.edit1 = QLineEdit('', self) #barrita blanca para escribir
         self.edit1.setGeometry(45, 15, 100, 20)
-        self.edit2 = QLineEdit('', self)
-        self.edit2.setGeometry(45, 15, 100, 20)
-        self.boton = QPushButton('Empezar', self) #botón que dice empezar
-        self.boton.resize(self.boton.sizeHint())
+        self.boton1 = QPushButton('Gatos', self)
+        self.boton1.setGeometry(45, 15, 100, 20)
+        self.boton2 = QPushButton('Pinguinos', self)
+        self.boton2.setGeometry(45, 15, 100, 20)
+        self.boton3 = QPushButton('Empezar', self) #botón que dice empezar
+        self.boton3.resize(self.boton3.sizeHint())
 
         """
         Creamos el layout horizontal y agregamos los widgets mediante el
@@ -40,7 +42,8 @@ class MiVentana(QWidget):
         h2box = QHBoxLayout()
         h2box.addStretch(1)
         h2box.addWidget(self.label2)
-        h2box.addWidget(self.edit2)
+        h2box.addWidget(self.boton1)
+        h2box.addWidget(self.boton2)
         h2box.addStretch(1)
 
         h3box = QHBoxLayout()
@@ -50,7 +53,7 @@ class MiVentana(QWidget):
 
         h4box = QHBoxLayout()
         h4box.addStretch(1)
-        h4box.addWidget(self.boton)
+        h4box.addWidget(self.boton3)
         h4box.addStretch(1)
 
 
